@@ -1,3 +1,9 @@
+// Ocean.swift
+//MAPD724-W2020-midterm test
+// Author name - Angadjot Singh Modi
+// Author id - 301060981
+// Test Date - 19th feb 2020
+
 import SpriteKit
 import GameplayKit
 
@@ -17,9 +23,9 @@ class Ocean : GameObject
     //GameObject Life Cycle Functions
     override func CheckBounds()
     {
-           
+           //700
         // check top boundary
-        if(self.position.x <= -700) // note maybe reset earlier
+        if(self.position.x <= -698) // note maybe reset earlier
         {
             Reset()
         }

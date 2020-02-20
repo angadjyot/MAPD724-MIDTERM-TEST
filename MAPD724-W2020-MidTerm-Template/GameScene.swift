@@ -1,3 +1,11 @@
+
+// GameSwift
+//MAPD724-W2020-midterm test
+// Author name - Angadjot Singh Modi
+// Author id - 301060981
+// Test Date - 19th feb 2020
+
+
 import UIKit
 import AVFoundation
 import SpriteKit
@@ -48,7 +56,7 @@ class GameScene: SKScene {
         // add island
         self.islandSprite = Island()
         self.islandSprite?.size = CGSize(width: 70, height: 70)
-        self.islandSprite?.position = CGPoint(x: -300, y: 0)
+        self.islandSprite?.position = CGPoint(x: -200, y: 0)
         self.addChild(islandSprite!)
         
         // add clouds

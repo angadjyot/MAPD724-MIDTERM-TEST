@@ -1,10 +1,9 @@
 //
 //  GameViewController.swift
-//  MAPD724-W2020-Lesson2
-//
-//  Created by Tom Tsiliopoulos on 2020-01-15.
-//  Copyright © 2020 CentennialCollege. All rights reserved.
-//
+//  MAPD724-W2020-midterm test
+// Author name - Angadjot Singh Modi
+// Author id - 301060981
+// Test Date - 19th feb 2020
 
 import UIKit
 import SpriteKit

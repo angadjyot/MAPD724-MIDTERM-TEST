@@ -1,3 +1,10 @@
+// Island.swift
+//MAPD724-W2020-midterm test
+// Author name - Angadjot Singh Modi
+// Author id - 301060981
+// Test Date - 19th feb 2020
+
+
 import SpriteKit
 import GameplayKit
 
@@ -21,27 +28,27 @@ class Island: GameObject
     override func CheckBounds()
     {
         // bottom boundary
-        if(self.position.y < -715)
+        if(self.position.x < -715)
         {
             self.Reset()
         }
         
         // right boundary
-        if(self.position.x >= 307 - self.halfWidth!)
+        if(self.position.y >= 300 - self.halfWidth!)
         {
-            self.position.x = 307 - self.halfWidth!
+            self.position.y = 300 - self.halfWidth!
         }
         
         // left boundary
-        if(self.position.x <= -307 + self.halfWidth!)
+        if(self.position.y <= -300 + self.halfWidth!)
         {
-            self.position.y = -307 + self.halfWidth!
+            self.position.y = -300 + self.halfWidth!
         }
     }
     
     func Move()
     {
-        self.position.x -= self.dx!
+        self.position.x -= self.dy!
     }
     
     override func Reset()
@@ -56,7 +63,7 @@ class Island: GameObject
     {
         self.zPosition = 1
         self.Reset()
-        self.dx = 5.0
+        self.dy = 5.0
     }
     
     override func Update()
