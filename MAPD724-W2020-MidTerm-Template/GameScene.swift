@@ -32,12 +32,13 @@ class GameScene: SKScene {
         self.name = "GAME"
         
         // add ocean
-        self.oceanSprite1 = Ocean()
-        self.oceanSprite1?.position = CGPoint(x: 0, y: 1864.67)
-        self.addChild(oceanSprite1!)
-        
+//        self.oceanSprite1 = Ocean()
+//        self.oceanSprite1?.position = CGPoint(x: 0, y: 1864.67)
+//        self.addChild(oceanSprite1!)
+//
         self.oceanSprite2 = Ocean()
         self.oceanSprite2?.position = CGPoint(x: 0, y: 177)
+        self.oceanSprite2?.size = CGSize(width: 2500, height: 2500)
         self.addChild(oceanSprite2!)
         
         // add plane
@@ -50,12 +51,12 @@ class GameScene: SKScene {
         self.addChild(islandSprite!)
         
         // add clouds
-        for index in 0...3
-        {
+//        for index in 0...1
+//        {
             let cloud: Cloud = Cloud()
             cloudSprites.append(cloud)
-            self.addChild(cloudSprites[index])
-        }
+            self.addChild(cloudSprites[0])
+//        }
         
         let engineSound = SKAudioNode(fileNamed: "engine.mp3")
         self.addChild(engineSound)
