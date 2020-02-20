@@ -11,7 +11,7 @@ import GameplayKit
 
 class GameViewController: UIViewController, GameManager {
     
-    
+          
     // button outlets
     @IBOutlet weak var StartButtonOutlet: UIButton!
     @IBOutlet weak var BackButtonOutlet: UIButton!

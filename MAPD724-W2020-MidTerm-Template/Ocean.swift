@@ -14,7 +14,7 @@ class Ocean : GameObject
     {
         super.init(imageString: "ocean", initialScale: 1.172)
         Start()
-    }
+    }  
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
